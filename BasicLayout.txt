@@ -1,9 +1,8 @@
 1.Game Controller
-
 The game controller acts like a central communication script for all of the differ-
 ent parts of the game. In a way, it is the main glue that holds together the various
 
-components that make up the game.
+components that make up the game:
 2. Scene Manager
 This script deals with the loading and saving of scenes. Scenes are what Unity calls
 its level files.
@@ -11,7 +10,6 @@ its level files.
 The UI manager draws all of the main in-game user interface elements, such as
 score display and lives.
 4. Sound Manager
-
 The sound manager handles sound playback. The manager holds an array con-
 taining the AudioClips of possible sounds to play.When the game first begins, the
 sound manager creates one individual AudioSource per sound in the array. When
@@ -26,3 +24,6 @@ game controller.
 As with players script, AI-controlled characters or enemies may already be present in
 the scene at load time or they may be created at runtime by the game controller or
 other script.
+
+
+Additional elements: UserManager, InputManager (one for keyboard one for pad)...
